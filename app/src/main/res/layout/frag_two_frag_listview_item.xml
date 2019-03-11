@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:overScrollMode="never"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/frag_item_img"
+        android:layout_width="@dimen/dimen_420_dip"
+        android:layout_height="@dimen/dimen_230_dip"
+        android:src="@mipmap/two_frag_00"
+        android:background="@drawable/img_bg"/>
+
+</LinearLayout>

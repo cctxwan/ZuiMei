@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/dimen_23_dip"
+    android:layout_marginLeft="@dimen/dimen_23_dip"
+    android:layout_marginBottom="@dimen/dimen_80_dip"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nestedScrollView"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tuijian_txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/09，星期三"
+                    android:layout_marginTop="@dimen/dimen_59_dip"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="@color/dimgrey"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐"
+                android:layout_marginTop="@dimen/dimen_13_dip"
+                android:textSize="@dimen/dimen_30_dip"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_33_dip"
+                android:orientation="vertical">
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/frag_one_xbanner"
+                    android:layout_width="@dimen/dimen_435_dip"
+                    android:layout_height="@dimen/dimen_280_dip"
+                    app:AutoPlayTime="3000"
+                    app:isAutoPlay="true"
+                    app:isHandLoop="true"
+                    app:isShowIndicatorOnlyOne="true"
+                    app:isShowNumberIndicator="true"
+                    app:pageChangeDuration="1000"
+                    app:pointsPosition="RIGHT"
+                    app:tipTextSize="@dimen/dimen_40_dip">
+
+                </com.stx.xhb.xbanner.XBanner>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_34_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_30_dip"
+                    android:textColor="@color/black"
+                    android:text="最新发布"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="查看全部"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/dimen_20_dip" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30_dip"
+                android:orientation="horizontal">
+
+                <com.cc.zuimei.myview.ScrollRecyclerView
+                    android:id="@+id/frag_new_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_34_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_30_dip"
+                    android:textColor="@color/black"
+                    android:text="热门推荐"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="查看全部"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/dimen_20_dip" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30_dip"
+                android:orientation="horizontal">
+
+                <com.cc.zuimei.myview.ScrollRecyclerView
+                    android:id="@+id/frag_huo_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="@dimen/dimen_435_dip"
+                android:layout_height="@dimen/dimen_200_dip"
+                android:src="@mipmap/img_00"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dimen_34_dip"
+                android:background="@drawable/img_bg"/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_435_dip"
+                android:layout_height="@dimen/dimen_200_dip"
+                android:layout_marginTop="@dimen/dimen_34_dip"
+                android:src="@mipmap/img_01"
+                android:scaleType="fitXY"
+                android:background="@drawable/img_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35_dip"
+                android:layout_marginTop="@dimen/dimen_34_dip"
+                android:text="最近浏览"
+                android:textSize="@dimen/dimen_30_dip"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_280_dip"
+                android:background="@drawable/lin_bg"
+                android:padding="@dimen/dimen_20_dip"
+                android:layout_marginTop="@dimen/dimen_26_dip"
+                android:layout_marginBottom="@dimen/dimen_13_dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_240_dip"
+                    android:layout_height="@dimen/dimen_240_dip"
+                    android:src="@mipmap/zjll_01"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimen_10_dip"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/zjll_02"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/zjll_00"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
